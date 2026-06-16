@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="./profile_icon.ico"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeruko - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-white antialiased bg-gray-950">
+
+    <div class="animated-background">
+        <div class="blob blob-1" data-speed="2"></div>
+        <div class="blob blob-2" data-speed="-3"></div>
+        <div class="blob blob-3" data-speed="4"></div>
+    </div>
+
+    
+    <div class="content-scroll-wrapper">
+        <div class="min-h-screen flex items-center justify-center p-4 py-20 relative z-10">
+            
+            <div class="w-full max-w-7xl bg-gray-900/30 backdrop-blur-2xl rounded-lg shadow-2xl border border-white/10 p-10 relative overflow-hidden">
+                
+                <div class="flex flex-col md:flex-row gap-12 items-center md:items-start relative z-10">
+                    
+                    <div class="w-full md:w-1/3 flex flex-col items-center sticky top-8">
+                        <div class="mb-8 relative group">
+                            <div class="absolute -inset-3 bg-gradient-to-tr from-purple-600 to-yellow-500 rounded-full blur-xl opacity-40 group-hover:opacity-80 transition duration-100"></div>
+                            <img 
+                                src="profile.jpg"
+                                alt="Profile picture" 
+                                class="relative w-56 h-56 rounded-full object-cover border-4 border-white/10 shadow-2xl"
+                                onerror="this.onerror=null; this.src='https://placehold.co/224x224/222222/ffffff?text=JR'"
+                            >
+                        </div>
+                        
+                        <h1 class="font-orbitron text-4xl font-black mb-2 tracking-wider text-center bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-gray-400">Jeruko</h1>
+                        <p class="text-xl text-purple-300 mb-8 font-semibold uppercase tracking-widest text-center">Game Developer • Programmer</p>
+                        
+                        <div class="w-full space-y-4 px-6">
+                            <a href="https://www.linkedin.com/in/jeruko/" target="_blank" class="flex items-center justify-center p-4 rounded-xl bg-blue-900/50 hover:bg-blue-800/80 border border-blue-500/30 transition-all duration-75 shadow-lg group backdrop-blur-md hover:scale-[1.02]">
+                                <svg class="w-6 h-6 fill-current text-white" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.518-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                <span class="ml-3 font-bold text-lg">LinkedIn</span>
+                            </a>
+                            
+                            <a href="https://github.com/Jeruko10" target="_blank" class="flex items-center justify-center p-4 rounded-xl bg-gray-800/50 hover:bg-gray-700/80 border border-gray-500/30 transition-all duration-75 shadow-lg group backdrop-blur-md hover:scale-[1.02]">
+                                <svg class="w-6 h-6 fill-current text-white" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.082-.778.08-.766.08-.766 1.203.086 1.838 1.238 1.838 1.238 1.07 1.835 2.809 1.305 3.492.998.108-.778.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.468-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.045.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.652.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.2-6.088 8.2-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                <span class="ml-3 font-bold text-lg">GitHub</span>
+                            </a>
+
+                            <a href="mailto:contact@jeruko.com" class="flex items-center justify-center p-4 rounded-xl bg-purple-900/40 hover:bg-purple-800/70 border border-purple-500/30 transition-all duration-75 shadow-lg group backdrop-blur-md hover:scale-[1.02]">
+                                <svg class="w-6 h-6 fill-current text-white" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                                <span class="ml-3 font-bold text-lg text-sm md:text-lg">contact@jeruko.com</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-2/3 border-t md:border-t-0 md:border-l border-white/10 pt-10 md:pt-0 md:pl-12">
+                        <h2 class="font-orbitron text-3xl font-bold mb-10 flex items-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-purple-500 uppercase tracking-wider">
+                            Featured Projects
+                        </h2>
+                        
+                        <div class="grid grid-cols-1 gap-10">
+
+                            <a href="https://jeruko10.itch.io/droplet" target="_blank" 
+                               class="game-trigger block group relative h-80 rounded-[2rem] overflow-hidden shadow-2xl border border-white/10 bg-gray-950 hover:border-yellow-500 hover:border-4 transition-all duration-75"
+                               data-title="Droplet"
+                               data-desc="A solitary painter works inside a sealed workshop, surrounded by unfinished canvases and dried pigment.
+                                Day after day, he layers color over old mistakes, trying to reach a final image.
+                                Something small moves between jars, ladders, and canvases, born from the same paint that stains the floor. It watches. It waits.
+                                Not every painting should be finished.
+                                Some exist only to hold what cannot be undone."
+                               data-screenshot1="screenshots/game10_screenshot2.jpg"
+                               data-screenshot2="screenshots/game10_screenshot3.jpg"
+                               data-screenshot3="screenshots/game10_screenshot4.jpg"
+                               data-color="yellow"
+                            >
+                                <img src="screenshots/game10_screenshot1.jpg" alt="Droplet - " class="w-full h-full object-cover transition-transform duration-100 group-hover:scale-105 opacity-80 group-hover:opacity-100" onerror="this.src='https://placehold.co/800x400/1e293b/475569?text=Game+11'">
+                                <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/40 to-transparent opacity-90"></div>
+                                <div class="absolute bottom-0 p-8 w-full">
+                                     <h3 class="font-orbitron text-3xl font-black text-yellow-400 drop-shadow-lg mb-2">Droplet - Current Development</h3>
+                                     <p class="text-gray-300 font-medium truncate">Exploration platformer • Godot</p>
+                                </div>
+                            </a>
+
+                            <a href="https://jeruko10.itch.io/the-forest-heart" target="_blank" 
+                               class="game-trigger block group relative h-80 rounded-[2rem] overflow-hidden shadow-2xl border border-white/10 bg-gray-950 hover:border-yellow-500 hover:border-4 transition-all duration-75"
+                               data-title="The Forest's Heart"
+                               data-desc="A curse has taken root in the heart of the forest… and so have you. Trapped beneath its twisted canopy, you must learn to embrace the corruption rather than fear it. Use the curse’s own power against the creatures it has warped, and fight your way toward the truth buried deep among the roots."
+                               data-screenshot1="screenshots/game11_screenshot2.jpg"
+                               data-screenshot2="screenshots/game11_screenshot3.jpg"
+                               data-screenshot3="screenshots/game11_screenshot4.jpg"
+                               data-color="yellow"
+                            >
+                                <img src="screenshots/game11_screenshot1.jpg" alt="The Forest's Heart" class="w-full h-full object-cover transition-transform duration-100 group-hover:scale-105 opacity-80 group-hover:opacity-100" onerror="this.src='https://placehold.co/800x400/1e293b/475569?text=Game+11'">
+                                <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/40 to-transparent opacity-90"></div>
+                                <div class="absolute bottom-0 p-8 w-full">
+                                     <h3 class="font-orbitron text-3xl font-black text-yellow-400 drop-shadow-lg mb-2">The Forest's Heart</h3>
+                                     <p class="text-gray-300 font-medium truncate">Platformer • Game Maker Studio</p>
+                                </div>
+                            </a>
+
+                            <a href="https://lvl3mage.itch.io/fontium" target="_blank" 
+                               class="game-trigger block group relative h-80 rounded-[2rem] overflow-hidden shadow-2xl border border-white/10 bg-gray-950 hover:border-yellow-500 hover:border-4 transition-all duration-75"
+                               data-title="Fontium"
+                               data-desc="The miraculous fountains of Montán have been sabotaged. Brother Marcos, a humble friar with more patience than common sense, sets out on a light-hearted journey to uncover who’s behind it and why. Along the way, he’ll rediscover the town’s forgotten history, its legends, and its secrets."
+                               data-screenshot1="screenshots/game2_screenshot2.png"
+                               data-screenshot2="screenshots/game2_screenshot3.png"
+                               data-screenshot3="screenshots/game2_screenshot4.png"
+                               data-color="yellow"
+                            >
+                                <img src="screenshots/game2_screenshot1.png" alt="Fontium" class="w-full h-full object-cover transition-transform duration-100 group-hover:scale-105 opacity-80 group-hover:opacity-100" onerror="this.src='https://placehold.co/800x400/4c1d95/febc2b?text=Game+2'">
+                                <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/40 to-transparent opacity-90"></div>
+                                <div class="absolute bottom-0 p-8 w-full">
+                                     <h3 class="font-orbitron text-3xl font-black text-yellow-400 drop-shadow-lg mb-2">Fontium</h3>
+                                     <p class="text-gray-300 font-medium truncate">Adventure • Unity</p>
+                                </div>
+                            </a>
+
+                            <a href="https://lvl3mage.itch.io/gogogarden" target="_blank" 
+                               class="game-trigger block group relative h-80 rounded-[2rem] overflow-hidden shadow-2xl border border-white/10 bg-gray-950 hover:border-yellow-500 hover:border-4 transition-all duration-75"
+                               data-title="Go Go Garden"
+                               data-desc="Tend your zen garden in a peaceful, relaxing experience… or at least, that’s what the brochure promised."
+                               data-screenshot1="screenshots/game3_screenshot2.jpg"
+                               data-screenshot2="screenshots/game3_screenshot3.jpg"
+                               data-screenshot3="screenshots/game3_screenshot4.jpg"
+                               data-color="yellow"
+                            >
+                                <img src="screenshots/game3_screenshot1.jpg" alt="Go Go Garden" class="w-full h-full object-cover transition-transform duration-100 group-hover:scale-105 opacity-80 group-hover:opacity-100" onerror="this.src='https://placehold.co/800x400/1e293b/475569?text=Game+3'">
+                                <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/40 to-transparent opacity-90"></div>
+                                <div class="absolute bottom-0 p-8 w-full">
+                                     <h3 class="font-orbitron text-3xl font-black text-yellow-400 drop-shadow-lg mb-2">Go Go Garden</h3>
+                                     <p class="text-gray-300 font-medium truncate">Puzzle • Unity</p>
+                                </div>
+                            </a>
+
+                            <a href="https://jeruko10.itch.io/grannyvsking" target="_blank" 
+                               class="game-trigger block group relative h-80 rounded-[2rem] overflow-hidden shadow-2xl border border-white/10 bg-gray-950 hover:border-yellow-500 hover:border-4 transition-all duration-75"
+                               data-title="Granny VS King"
+                               data-desc="Play as an unstoppable grandma on a mission to overthrow tyranny using her deadliest weapon: food. Force-feed the king until he explodes. Nobody can refuse a grandma’s cooking… wait. Did she just do a frontflip?"
+                               data-screenshot1="screenshots/game4_screenshot2.jpg"
+                               data-screenshot2="screenshots/game4_screenshot3.jpg"
+                               data-screenshot3="screenshots/game4_screenshot4.jpg"
+                               data-color="yellow"
+                            >
+                                <img src="screenshots/game4_screenshot1.jpg" alt="Granny VS King" class="w-full h-full object-cover transition-transform duration-100 group-hover:scale-105 opacity-80 group-hover:opacity-100" onerror="this.src='https://placehold.co/800x400/4c1d95/febc2b?text=Game+4'">
+                                <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/40 to-transparent opacity-90"></div>
+                                <div class="absolute bottom-0 p-8 w-full">
+                                     <h3 class="font-orbitron text-3xl font-black text-yellow-400 drop-shadow-lg mb-2">Granny VS King</h3>
+                                     <p class="text-gray-300 font-medium truncate">Arcade • Unity</p>
+                                </div>
+                            </a>
+
+                            <a href="https://jeruko10.itch.io/whatever-it-takes" target="_blank" 
+                               class="game-trigger block group relative h-80 rounded-[2rem] overflow-hidden shadow-2xl border border-white/10 bg-gray-950 hover:border-yellow-500 hover:border-4 transition-all duration-75"
+                               data-title="Whatever It Takes"
+                               data-desc="In Whatever It Takes, penguins aren’t just brave explorers. They’re also fuel. Your crew is made of loyal penguins, and your ship is powered by sacrifice. Protect them and risk never reaching your goal… or throw them into the grinder and inch closer to the mythical cosmic cookie. Leadership is hard when every decision costs a life. Cute, tragic, and morally questionable."
+                               data-screenshot1="screenshots/game1_screenshot2.jpg"
+                               data-screenshot2="screenshots/game1_screenshot3.jpg"
+                               data-screenshot3="screenshots/game1_screenshot4.jpg"
+                               data-color="yellow"
+                            >
+                                <img src="screenshots/game1_screenshot1.jpg" alt="Whatever It Takes" class="w-full h-full object-cover transition-transform duration-100 group-hover:scale-105 opacity-80 group-hover:opacity-100" onerror="this.src='https://placehold.co/800x400/1e293b/475569?text=Game+1'">
+                                <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/40 to-transparent opacity-90"></div>
+                                <div class="absolute bottom-0 p-8 w-full">
+                                     <h3 class="font-orbitron text-3xl font-black text-yellow-400 drop-shadow-lg mb-2">Whatever It Takes</h3>
+                                     <p class="text-gray-300 font-medium truncate">Simulation • Godot</p>
+                                </div>
+                            </a>
+
+                            <a href="https://jeruko10.itch.io/a-normal-day-at-the-library" target="_blank" 
+                               class="game-trigger block group relative h-80 rounded-[2rem] overflow-hidden shadow-2xl border border-white/10 bg-gray-950 hover:border-yellow-500 hover:border-4 transition-all duration-75"
+                               data-title="A normal day at the library"
+                               data-desc="Just a normal day. Return a book. Borrow another. Respect the silence. Sure, the walls are made of chainsaws. But that’s normal, right? Then you notice the guy in the corner. And the gun in his hands."
+                               data-screenshot1="screenshots/game5_screenshot2.jpg"
+                               data-screenshot2="screenshots/game5_screenshot3.jpg"
+                               data-screenshot3="screenshots/game5_screenshot4.jpg"
+                               data-color="yellow"
+                            >
+                                <img src="screenshots/game5_screenshot1.jpg" alt="A normal day at the library" class="w-full h-full object-cover transition-transform duration-100 group-hover:scale-105 opacity-80 group-hover:opacity-100" onerror="this.src='https://placehold.co/800x400/1e293b/475569?text=Game+5'">
+                                <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/40 to-transparent opacity-90"></div>
+                                <div class="absolute bottom-0 p-8 w-full">
+                                     <h3 class="font-orbitron text-3xl font-black text-yellow-400 drop-shadow-lg mb-2">A normal day at the library</h3>
+                                     <p class="text-gray-300 font-medium truncate">Survival • Unity</p>
+                                </div>
+                            </a>
+
+                            <a href="https://lvl3mage.itch.io/ujigamejam-2023" target="_blank" 
+                               class="game-trigger block group relative h-80 rounded-[2rem] overflow-hidden shadow-2xl border border-white/10 bg-gray-950 hover:border-yellow-500 hover:border-4 transition-all duration-75"
+                               data-title="Jello Throwdown"
+                               data-desc="A chaotic co-op platformer where teamwork means weaponizing your partner. One player throws the other at enemies, killing them on impact. Roles constantly swap as new slimes drop from above. Coordination, timing, and sacrifice are the only way to survive. Friendship optional."
+                               data-screenshot1="screenshots/game6_screenshot2.jpg"
+                               data-screenshot2="screenshots/game6_screenshot3.jpg"
+                               data-screenshot3="screenshots/game6_screenshot4.jpg"
+                               data-color="yellow"
+                            >
+                                <img src="screenshots/game6_screenshot1.jpg" alt="Jello Throwdown" class="w-full h-full object-cover transition-transform duration-100 group-hover:scale-105 opacity-80 group-hover:opacity-100" onerror="this.src='https://placehold.co/800x400/4c1d95/febc2b?text=Game+6'">
+                                <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/40 to-transparent opacity-90"></div>
+                                <div class="absolute bottom-0 p-8 w-full">
+                                     <h3 class="font-orbitron text-3xl font-black text-yellow-400 drop-shadow-lg mb-2">Jello Throwdown</h3>
+                                     <p class="text-gray-300 font-medium truncate">Co-op Survival • Unity</p>
+                                </div>
+                            </a>
+
+                            <a href="https://jeruko10.itch.io/poisioned-cat" target="_blank" 
+                               class="game-trigger block group relative h-80 rounded-[2rem] overflow-hidden shadow-2xl border border-white/10 bg-gray-950 hover:border-yellow-500 hover:border-4 transition-all duration-75"
+                               data-title="Poisoned Cat"
+                               data-desc="You are a cat. You are poisoned. Life is hard."
+                               data-screenshot1="screenshots/game7_screenshot2.jpg"
+                               data-screenshot2="screenshots/game7_screenshot3.jpg"
+                               data-screenshot3="screenshots/game7_screenshot4.jpg"
+                               data-color="yellow"
+                            >
+                                <img src="screenshots/game7_screenshot1.jpg" alt="Poisoned Cat" class="w-full h-full object-cover transition-transform duration-100 group-hover:scale-105 opacity-80 group-hover:opacity-100" onerror="this.src='https://placehold.co/800x400/1e293b/475569?text=Game+7'">
+                                <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/40 to-transparent opacity-90"></div>
+                                <div class="absolute bottom-0 p-8 w-full">
+                                     <h3 class="font-orbitron text-3xl font-black text-yellow-400 drop-shadow-lg mb-2">Poisoned Cat</h3>
+                                     <p class="text-gray-300 font-medium truncate">Survival • Unity</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="floating-tooltip" class="fixed hidden z-50 w-[40rem] p-6 bg-gray-950/90 backdrop-blur-3xl rounded-3xl border border-white/20 shadow-[0_0_50px_-12px_rgba(0,0,0,0.8)] pointer-events-none transition-opacity duration-100 opacity-0">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
